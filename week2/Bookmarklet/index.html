@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bookmarklet</title>
+
+	<script src="sketch.js"></script>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			margin: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<p style="font-family:courier;">
+		This is a <a href="javascript:(function(){ let script = document.createElement('script'); script.src = 'http://localhost:8000/Documents/HackingtheBrowser/week2/Bookmarklet/bookmarklet.js'; document.body.appendChild(script); })()">bookmarklet</a>.
+    <!-- This is a <a href = "javascript:(function(){alert('hello')})()">bookmarklet</a>. -->
+	</p>
+
+</body>
+
+</html>
