@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "kermitTheFrog",
+  "version": "0.1",
+
+  "web_accessible_resources":[
+    "kermitFrog/*.jpg"
+  ],
+
+  "content_scripts":[
+    {
+      "matches":[
+        "<all_urls>"
+      ],
+      "js":["content.js"]
+    }
+  ]
+}
